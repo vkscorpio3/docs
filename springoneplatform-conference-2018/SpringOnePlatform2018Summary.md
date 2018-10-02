@@ -33,9 +33,7 @@ All of this was brought together with *code*. [Java 11](http://openjdk.java.net/
 
 - - <https://principlesofchaos.org/>
 
-  - Do science experiments on our system. Hypothesis, Test, Observe  
-
-  - Break Stuff - Do it in production
+  - Do science experiments on our system. Hypothesis, Test, Observe. Break Stuff - Do it in production
 
     ![image-20180928193834922](media/image-20180928193834922.png)
 
@@ -44,6 +42,8 @@ All of this was brought together with *code*. [Java 11](http://openjdk.java.net/
 - Securing Spring Functions - You can’t rely on the server-less to destroy everything once the function is done and the container could be reused, so the exploit can carry over to another secure function
 
 - Spring now fully supports *Reactive programming* across the framework and there were many sessions on Reactive Spring. This an asynchronous, non-blocking flow which is much more efficient with resources. It is much more complex to program this way and should be avoided unless you have a use case with an extremely high number of transitions per second. 
+
+- Apache Geode which Gemfire is based on is being used as the predominant interface for caching use case but it is also being use in a decentralized model to give developers full access to defining independent Microservices. 
 
 - Hierarchies are a org structure of the Industrial Age, while networks are of the Information Age. High Performing organizations at scale have Networks & Hierarchy. 
 
@@ -70,7 +70,7 @@ All of this was brought together with *code*. [Java 11](http://openjdk.java.net/
 
 - Framework for data-driven decision making
 
-  ![image-20180929003527911](/Users/ajay/Documents/SpringOneCon%20Notes/media/image-20180929003527911.png)
+  ![image-20180929003527911](media/image-20180929003527911.png)
 
   - Identify a problem. What problem if we continue to ignore will become the biggest pain down the line 
   - Break down and frame the one problem 
@@ -105,21 +105,19 @@ All of this was brought together with *code*. [Java 11](http://openjdk.java.net/
 
 - Look into [JHipster](<https://www.jhipster.tech/>) for full-stack reference implementation inspiration
 
-- YugaByte DB provides a solution 
-
-- We are on an older version Dynatrace in JPMC. <u>Need to follow-up one when we are going to get the latest.</u> 
-
-- We are on old version of Cloud Foundry / Pivotal Cloud Foundry. Our ability to use PCC is blocked by this. <u>Need to follow up on when we are going to have the latest.</u>  
+- [YugaByte DB](https://www.yugabyte.com/) provides an emerging new type of database providing the best of both worlds NoSQL and SQL.     
 
 ## Other General Thoughts
 
+* We are on an older version Dynatrace in JPMC. <u>Need to follow-up one when we are going to get the latest.</u> 
+* We are on old version of Cloud Foundry / Pivotal Cloud Foundry. Our ability to use PCC is blocked by this. <u>Need to follow up on when we are going to have the latest.</u> 
 * All digital transformation journey presentations start with a history lesson (pic of an very old building etc) of the organization and successes in their domain of expertise
 * Google Cloud looks very good in general. They also build in many of the SRE capabilities
 * Wide variation of presentation quality. Rockstar-level performances to an unrehearsed walk-through of a yaml file. 
 * Our organization should present more at tech conferences. It is a good recruiting tool. Will help us shape the direction of the open source software we depend on so much. 
 * Our organization should contribute more to open source projects. Contributing gives you more value then just using it - HBR study 
 * We should attend more conferences. Not just SpringOne. Example: https://conferences.oreilly.com/velocity
-*  Good Presentation Style
+* Good Presentation Style
   * Each slide light on content and have many slides if required, but avoid dense slides. 
   *  Usage of Animated GIFs in Presentations
   * Live Coding or Deployment Demos
